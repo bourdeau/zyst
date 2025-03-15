@@ -8,26 +8,30 @@ I make this project for **fun**, it doesn't aim to replace Redis. For now, I am 
 
 ![Flamegraph](flamegraph.svg)
 
-## Setup
+## Install
 
-Run the zyst server:
+Docker:
+
+```bash
+docker run -d --name zyst -p 6379:6379 bourdeau/zyst:latest
+```
+
+Cargo:
 
 ```bash
 cargo install zyst
-# And run it 
-zyst
 ```
 
 In another terminal:
 
 ```
-redis-cli
+redis-cli -h 127.0.0.1 -p 6379
 SET first_name John
 ```
 
 ## Features
 
-`Zyst` implements a basic `Append-Only File (AOF)` system. `AOF` persistence logs every write operation received by the server, allowing these operations to be replayed during startup to restore the original dataset.
+`Zyst` implements `Append-Only File (AOF)` system. `AOF` persistence logs every write operation received by the server, allowing these operations to be replayed during startup to restore the original dataset.
 
 ### Commands
 

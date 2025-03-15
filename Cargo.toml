@@ -10,6 +10,15 @@ repository = "https://github.com/bourdeau/zyst/"
 license = "Apache-2.0"
 publish = true
 
+[badges]
+maintenance = { status = "actively-developed" }
+
+[categories]
+categories = ["database", "network-programming", "asynchronous", "data-structures", "caching"]
+
+[keywords]
+keywords = ["redis", "database", "key-value-store", "server", "async", "networking", "caching", "nosql", "performance", "low-latency"]
+
 [dependencies]
 clap = { version = "4.5.28", features = ["derive"] }
 config = "0.15.7"
