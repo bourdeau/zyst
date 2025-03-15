@@ -13,9 +13,11 @@ I make this project for **fun**, it doesn't aim to replace Redis. For now, I am 
 Run the zyst server:
 
 ```bash
-cargo build --release
-./target/release/zyst
+cargo install zyst
+# And run it 
+zyst
 ```
+
 In another terminal:
 
 ```
