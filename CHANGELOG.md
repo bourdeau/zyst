@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/bourdeau/zyst/compare/v1.0.2...v1.0.3) (2025-03-16)
+
+
+### Bug Fixes
+
+* release type Rust ([#12](https://github.com/bourdeau/zyst/issues/12)) ([6a96237](https://github.com/bourdeau/zyst/commit/6a96237f916c859312b4a2ee4d1ad41c90732fde))
+
 ## [1.0.2](https://github.com/bourdeau/zyst/compare/v1.0.1...v1.0.2) (2025-03-16)
 
 
