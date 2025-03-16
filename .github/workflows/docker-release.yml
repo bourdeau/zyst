@@ -1,4 +1,4 @@
-name: Docker releqse
+name: Docker release
 
 on:
   workflow_dispatch:
