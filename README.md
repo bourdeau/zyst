@@ -1,6 +1,6 @@
 # 🐆 Zyst
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/bourdeau/zyst) [![build status](https://github.com/bourdeau/zyst/actions/workflows/build.yml/badge.svg)](https://github.com/bourdeau/zyst/actions) [![dependency status](https://deps.rs/repo/github/bourdeau/zyst/status.svg)](https://deps.rs/repo/github/bourdeau/zyst)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/bourdeau/zyst) [![build status](https://github.com/bourdeau/zyst/actions/workflows/pull-request.yml/badge.svg)](https://github.com/bourdeau/zyst/actions) [![dependency status](https://deps.rs/repo/github/bourdeau/zyst/status.svg)](https://deps.rs/repo/github/bourdeau/zyst)
 
 Zyst is a Redis-compatible server reimplemented from scratch in Rust. It aims to provide a in-memory key-value store while leveraging Rust’s safety and concurrency features. Zyst is only supported on Linux.
 
