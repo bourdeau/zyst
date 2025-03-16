@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/bourdeau/zyst/compare/v1.0.1...v1.0.2) (2025-03-16)
+
+
+### Bug Fixes
+
+* crate publish ([#10](https://github.com/bourdeau/zyst/issues/10)) ([d65c4cd](https://github.com/bourdeau/zyst/commit/d65c4cd971dc75c4be2745f79d1807f33092d30b))
+
 ## [1.0.1](https://github.com/bourdeau/zyst/compare/v1.0.0...v1.0.1) (2025-03-16)
 
 
