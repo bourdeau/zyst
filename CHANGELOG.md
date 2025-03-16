@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.1](https://github.com/bourdeau/zyst/compare/v1.0.0...v1.0.1) (2025-03-16)
+
+
+### Bug Fixes
+
+* badges ([#8](https://github.com/bourdeau/zyst/issues/8)) ([4502faa](https://github.com/bourdeau/zyst/commit/4502faae22fd0360f867290623dabdbb7263315d))
+* CI ([#6](https://github.com/bourdeau/zyst/issues/6)) ([caef8e3](https://github.com/bourdeau/zyst/commit/caef8e366923b8f1310681804100a0db284aaabb))
+* doc & Manifest ([#4](https://github.com/bourdeau/zyst/issues/4)) ([3bc7b80](https://github.com/bourdeau/zyst/commit/3bc7b804f7777193209101a3c3c1e7cb28d4ef3f))
+
 ## 1.0.0 (2025-03-15)
 
 
