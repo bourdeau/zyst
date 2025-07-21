@@ -22,10 +22,10 @@ async fn main() -> Result<(), Box<dyn Error>> {
     let config = get_config();
     let port: u16 = config.get("port").expect("Port is missing");
     let bind: Ipv4Addr = config.get("bind").expect("Bind is missing");
-    let full_address = format!("{}:{}", bind, port);
+    let full_address = format!("{bind}:{port}");
 
     let listener = TcpListener::bind(full_address.to_string()).await?;
-    let message = format!("Listening {}...", full_address);
+    let message = format!("Listening {full_address}...");
 
     info!(message);
 
