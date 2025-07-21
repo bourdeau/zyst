@@ -67,17 +67,17 @@ fn is_read_command(cmd_type: CommandType) -> bool {
 
 fn format_command_args(args: &CommandArgs, cmd_type: CommandType) -> String {
     match args {
-        CommandArgs::NoArgs => format!("{:?}", cmd_type),
+        CommandArgs::NoArgs => format!("{cmd_type:?}"),
         CommandArgs::SingleKey(key) => key.clone(),
         CommandArgs::MultipleKeys(keys) => keys.join(" "),
-        CommandArgs::KeyWithValue { key, value } => format!("{} {}", key, value),
+        CommandArgs::KeyWithValue { key, value } => format!("{key} {value}"),
         CommandArgs::KeyWithValues { key, values } => format!("{} {}", key, values.join(" ")),
         CommandArgs::HashFields { key, fields } => format!(
             "{} {}",
             key,
             fields
                 .iter()
-                .map(|(field, value)| format!("{} {}", field, value))
+                .map(|(field, value)| format!("{field} {value}"))
                 .collect::<Vec<_>>()
                 .join(" ")
         ),
@@ -102,12 +102,12 @@ async fn dump_db_to_aof(db: &Db) -> Result<(), Error> {
         match value {
             DbValue::StringKey(k) => {
                 if let Some(val) = &k.data {
-                    output.push_str(&format!("SET {} {}\n", key, val));
+                    output.push_str(&format!("SET {key} {val}\n"));
                 }
             }
             DbValue::ListKey(l) => {
                 let values = l.data.iter().cloned().collect::<Vec<String>>().join(" ");
-                output.push_str(&format!("LPUSH {} {}\n", key, values));
+                output.push_str(&format!("LPUSH {key} {values}\n"));
             }
             DbValue::SetKey(s) => {
                 let values = s
@@ -122,7 +122,7 @@ async fn dump_db_to_aof(db: &Db) -> Result<(), Error> {
                 let fields = hash_key
                     .data
                     .iter()
-                    .map(|(field, value)| format!("{} {}", field, value))
+                    .map(|(field, value)| format!("{field} {value}"))
                     .collect::<Vec<_>>()
                     .join(" ");
                 output.push_str(&format!("HSET {} {}\n", hash_key.name, fields));

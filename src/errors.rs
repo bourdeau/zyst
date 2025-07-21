@@ -39,5 +39,5 @@ pub enum ZystError {
 }
 
 pub fn format_redis_error(error: ZystError) -> String {
-    format!("-{}\r\n", error)
+    format!("-{error}\r\n")
 }

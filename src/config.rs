@@ -42,10 +42,7 @@ static CONFIG: Lazy<Config> = Lazy::new(|| {
     let cli = Cli::parse();
 
     if !config_path.exists() {
-        println!(
-            "Config file not found. Creating default at {:?}",
-            config_path
-        );
+        println!("Config file not found. Creating default at {config_path:?}");
         create_default_config(&config_path);
     }
 
