@@ -22,8 +22,8 @@
       perSystem = { self', system, pkgs, lib, ... }:
         let
           cargoToml = lib.importTOML ./Cargo.toml;
-          pname = cargoToml.package.name or "zyst";
-          version = cargoToml.package.version or "1.0.3";
+          pname = cargoToml.package.name;
+          version = cargoToml.package.version;
 
           rustToolchain = (fenix.packages.${system}.fromManifestFile rust-manifest).defaultToolchain;
           craneLib = (crane.mkLib pkgs).overrideToolchain rustToolchain;

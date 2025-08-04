@@ -10,6 +10,12 @@ I make this project for **fun**, it doesn't aim to replace Redis. For now, I am 
 
 ## Install
 
+Nix:
+
+```bash
+nix run
+```
+
 Docker:
 
 ```bash
