@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/bourdeau/zyst/compare/v1.0.3...v1.1.0) (2025-08-04)
+
+
+### Features
+
+* flake ([#16](https://github.com/bourdeau/zyst/issues/16)) ([5d81944](https://github.com/bourdeau/zyst/commit/5d81944bb92473f12cd5baf8c17001b203b0edf2))
+* update deps ([#14](https://github.com/bourdeau/zyst/issues/14)) ([758bfb0](https://github.com/bourdeau/zyst/commit/758bfb0db76193c3b320440b52be21cfdc8a3b99))
+
 ## [1.0.3](https://github.com/bourdeau/zyst/compare/v1.0.2...v1.0.3) (2025-03-16)
 
 
