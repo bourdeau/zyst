@@ -1,6 +1,6 @@
 [package]
 name = "zyst"
-version = "1.0.3"
+version = "1.1.0"
 description = "Redis-compatible server"
 edition = "2021"
 authors = ["Pierre-Henri Bourdeau <phbasic@gmail.com>"]
